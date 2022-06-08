@@ -9,8 +9,10 @@ jobs:
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
-      - name: wasm-build
-        uses: actions-rs/toolchain@v1
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: install+build
         run: | 
           cargo install wasm-pack
           wasm-pack build --target bundler
