@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wasm Test</title>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.8.2/mapbox-gl.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        #map {
+            height: 80vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <p>WASM/Rust Inside: <span id="pan">false</span></p>
+    <p>Wasm performance: <span id="tim">0</span> secs</p>
+
+
+
+
+    <script src="bundle.js">
+
+    </script>
+
+</body>
+
+</html>
